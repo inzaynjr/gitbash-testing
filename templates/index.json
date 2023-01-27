@@ -1,5 +1,9 @@
 {
   "sections": {
+    "25237adf-3290-4dd2-a778-99d17276dfc8": {
+      "type": "testingchanges",
+      "settings": {}
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -212,6 +216,7 @@
     }
   },
   "order": [
+    "25237adf-3290-4dd2-a778-99d17276dfc8",
     "image_banner",
     "rich_text",
     "featured_collection",

@@ -1,0 +1,47 @@
+{{ 'testingchanges.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'testingchanges.js' | asset_url }}" defer="defer"></script>
+<custom-page-customization>
+  {% comment %} <div id="slider-container">
+    <input
+      id="inches-input"
+      type="text"
+      value="0"
+      readonly>
+    <input
+      id="slider"
+      type="range"
+      min="0"
+      max="100"
+      value="0">
+  </div> {% endcomment %}
+  {% comment %} <div id="slider-container">
+    <input id="unit-selector" type="radio" name="unit" value="inches" checked> Inches
+    <input id="unit-selector" type="radio" name="unit" value="centimeters"> Centimeters
+    <br>
+    <input id="unit-value" type="text" value="0" readonly>
+    <br>
+    <input id="slider" type="range" min="0" max="12" value="0">
+  </div> {% endcomment %}
+  <div id="slider-container">
+  <button id="inches-button">Inches</button>
+  <button id="centimeters-button">Centimeters</button>
+  <br>
+  <input id="unit-value" type="text" value="0" readonly>
+  <br>
+  <input id="slider" type="range" min="0" max="100" value="0">
+</div>
+
+</custom-page-customization>
+
+
+{% schema %}
+  {
+    "name": "testing",
+    "settings": [],
+    "presets": [
+      {
+        "name": "testingchanges"
+      }
+    ]
+  }
+{% endschema %}
